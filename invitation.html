@@ -7,6 +7,9 @@
     <title>👰🏻‍♀️🤵🏻‍♂️ 수진과 진우의 결혼식</title>
     <meta name="description" content="2022년 10월 1일 오후 5시">
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/scripts.js"></script>
+    <script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+
 </head>
 <body>
     <main class="contents">
@@ -38,12 +41,14 @@
                 2022년 10월 1일 토요일 오후 5시<br>
                 루나미엘레 12층 그랜드볼룸<br>
             </p>
-            <!-- * 카카오맵 - 지도퍼가기 -->
-            <!-- 1. 지도 노드 -->
-            <div align="center" max-width="600px">
-                <!-- * 카카오맵 - 지도퍼가기 -->
-                <div id="daumRoughmapContainer1597653753785" class="root_daum_roughmap root_daum_roughmap_landing"></div>
-            </div>
+            <!--
+                * 카카오맵 - 약도서비스
+                * 한 페이지 내에 약도를 2개 이상 넣을 경우에는
+                * 약도의 수 만큼 소스를 새로 생성, 삽입해야 합니다.
+            -->
+            <!-- 1. 약도 노드 -->
+            <div id="daumRoughmapContainer1658067952946" class="root_daum_roughmap root_daum_roughmap_landing"></div>
+
         </section>
         <section>
             <h2>신부신랑에게 연락하기</h2>
@@ -58,16 +63,5 @@
         </section>
     </main>
 
-	<script charset="UTF-8" class="daum_roughmap_loader_script"
-    src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
-
-<script charset="UTF-8">
-    new daum.roughmap.Lander({
-        "timestamp": "1597653753785",
-        "key": "2zok9",
-        "mapWidth": "375",
-        "mapHeight": "400"
-    }).render();
-</script>
 </body>
 </html>
