@@ -4,3 +4,10 @@ body{
 
     font-family: 'IBM Plex Sans KR', sans-serif;
 }
+
+img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  
