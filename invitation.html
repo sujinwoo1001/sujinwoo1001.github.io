@@ -17,13 +17,13 @@
 
 <body>
     <main class="contents">
-        <section id="main_photo">
+        <section class="main_photo">
             <br><br><br>
             <img src="img/main.png" alt="수진진우 제일잘나온사진">
         </section>
-        <section id="invitation">
+        <section class="invitation">
             <h3>초대의 말</h3>
-            <p class="message">
+            <div class="invitation_msg">
                 서로의 꿈을 위해 최고의 조력자가 될 것<br>
                 삶의 가장 빛나는 순간도,<br>
                 삶을 돌아보는 순간도 함께할 것<br>
@@ -33,12 +33,12 @@
                 저희의 약속입니다.<br>
                 그 약속의 자리에 여러분을 초대합니다.<br>
                 부디 오셔서 많이 축복해주세요.<br>
-            </p>
+            </div>
             <br>
-            <p class="parents">
+            <div class="parents">
                 이제우 ・ 이진옥의 장남 진우<br>
                 김하근 ・ 김은아의 장녀 수진<br>
-            </p>
+            </div>
         </section>
         <section>
             <h3>일시 및 장소</h3>
@@ -48,6 +48,35 @@
 
                 <img src="img/map.png" alt="오시는길" class="center">
 
+                <div class="link">
+                    <ul>
+                        <li>
+                            <a href="javascript:pcAlert();" class="tmap">
+                                <img class="map_button" src="img/buttons/tmap.png"><br>
+                                티맵
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:pcAlert();" class="kakaonavi">
+                                <img class="map_button" src="img/buttons/kakaonavi.png"><br>
+                                카카오네비
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:pcAlert();" class="navermap">
+                                <img class="map_button" src="img/buttons/navermap.png"><br>
+                                네이버지도
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:pcAlert();" class="kakaomap">
+                                <img class="map_button" src="img/buttons/kakaomap.png"><br>
+                                카카오맵
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                                
             </p>
         </section>
 
@@ -143,7 +172,25 @@
             </div>
         </section>
     </main>
-
+    <footer id="footer">
+        <div class="foot-share">
+            <ul class="foot-share-list">
+                <li>
+                    <a href="javascript:pcAlert();" class="kakao">
+                        카카오톡<br> 공유하기
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:pcAlert();" class="facebook">
+                        페이스북<br> 공유하기
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="foot-logo">
+            Sujin & Jinwoo
+        </div>
+    </footer>
 </body>
 
 </html>

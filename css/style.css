@@ -24,14 +24,62 @@ a {
   text-decoration: none;
 }
 
+ul, ol, li, dd, dt {
+  list-style: none;
+  padding-inline-start: 0px;
+}
+
+
+.link li {
+    display: inline-block;
+    vertical-align: top;
+    width: 80px;
+    padding: 0 0.625rem;
+    box-sizing: content-box;
+}
+
+
+.link a {
+  position: relative;
+  display: block;
+  font-size: 0.688rem;
+  font-weight: 400;
+  line-height: 1rem;
+  color: #111;
+  text-decoration: none;
+}
+
+.invitation_msg {
+
+	position:relative;
+
+}
+
+.invitation_msg::after{
+	content:'';
+	display:block;
+	position:absolute;
+	left:50%; 
+	width:1px;
+	height:1.875rem;
+	background:#999;
+  margin-top: 20px;
+}
+
 .button {
   width: 25px;
   height: 25px;
   margin: 5px;
 }
 
-.parents {
+.map_button {
 
+  width: 55px;
+  height: 55px;
+
+}
+.parents {
+  margin-top: 50px;
   font-size: 17px;
 }
 
