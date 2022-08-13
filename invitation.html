@@ -123,7 +123,9 @@
             <div id="popup_g" class="hide">
                 <div class="content">
                   <p>
-                    신랑 이진우 <p class="bank_txt"> </p>
+                    신랑 이진우 <br>
+                    신한은행 <br>
+                    111-1111-1111
                   </p>
                   <button onclick="closePopup()">닫기</button>
                 </div>
@@ -131,36 +133,14 @@
             
             <div id="popup_b" class="hide">
                 <div class="content">
-                    <table cellspacing="0" cellpadding="0" class="contact_row_table content">
-                        <colgroup>
-                            <col width="35%">
-                            <col width="65%">
-                        </colgroup>
-                        <tbody>
-                            <tr>
-                                <td>신랑) 이진우</td>
-                                <td class="bank_txt">
-                                    <div class="bank_txt_com">신한은행</div>
-                                    <div class="bank_txt_num">111-1111-1111</div>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <button onclick="closePopup2()">닫기</button>
+                  <p>
+                    신부 김수진 <br>
+                    신한은행 <br>
+                    111-1111-1111
+                  </p>
+                  <button onclick="closePopup2()">닫기</button>
                 </div>
             </div>
-
-            <script>
-                $(function() {
-                    $('.bank_txt').on('click', function() {
-                        var bank_txt = $('.bank_txt_com', this).text() + ' ' + $('.bank_txt_num', this).text()
-                        if (bank_txt.length > 1) {
-                            clipboard_copy(bank_txt)
-                            alert(bank_txt + ' 복사되었습니다')
-                        }
-                    })
-                })
-                </script>
         </section>
     </main>
 
