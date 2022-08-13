@@ -20,6 +20,10 @@ section {
   width: 100%;
 }
 
+a {
+  text-decoration: none;
+}
+
 .button {
   width: 25px;
   height: 25px;
@@ -37,6 +41,12 @@ section {
   margin: 5px;
 }
 
+.contacts_div {
+  width: 100%;
+  margin: 10px auto;
+  display: flex;
+
+}
 .bridal {
   flex: 1;
 }
