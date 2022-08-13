@@ -1,35 +1,30 @@
-
-
-function mask(opacity) {
-
-    if (opacity == 0) {
-
-        $('#mask').hide()
-        $('.mask_over').hide()
-
-    } else {
-
-        //$('#mask').css({ 'width': $(window).width(), 'height': $(window).height() })
-        $('#mask').stop().fadeTo('slow', opacity);  //$('#mask').fadeIn(1000)
-        $('#mask').show()
-
-    }
-
+function showPopup(multipleFilter) {
+	const popup = document.querySelector('#popup_g');
+  
+  if (multipleFilter) {
+  	popup.classList.add('multiple-filter');
+  } else {
+  	popup.classList.remove('multiple-filter');
+  }
+  
+  popup.classList.remove('hide');
 }
-
-
-$(document).ready(function() {
-
-    /*
-             CONTACT
-                             */
-             $('.contact_button').bind('click', function() {
-                mask(0.5)
-                var type = $(this).data('type')
-                $('#contact_'+type).show()
-            })
-        
-
-            
-
-})
+function showPopup2(multipleFilter) {
+	const popup = document.querySelector('#popup_b');
+  
+  if (multipleFilter) {
+  	popup.classList.add('multiple-filter');
+  } else {
+  	popup.classList.remove('multiple-filter');
+  }
+  
+  popup.classList.remove('hide');
+}
+function closePopup() {
+	const popup = document.querySelector('#popup_g');
+  popup.classList.add('hide');
+}
+function closePopup2() {
+	const popup = document.querySelector('#popup_b');
+  popup.classList.add('hide');
+}
