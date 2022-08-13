@@ -12,13 +12,38 @@ img {
     height: auto;
   }
 
+section {
+  margin-bottom: 2cm;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
 
-.center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
-  }
+.button {
+  width: 25px;
+  height: 25px;
+  margin: 5px;
+}
+
+.parents {
+
+  font-size: 17px;
+}
+
+.img_face {
+  width: 60px;
+  height: 60px;
+  margin: 5px;
+}
+
+.bridal {
+  flex: 1;
+}
+
+.groom {
+  flex: 1;
+}
 
 /* external css: flickity.css */
 
@@ -28,9 +53,6 @@ img {
 }
 
 
-.gallery {
-  background: #EEE;
-}
 
 .gallery-cell {
   width: 66%;
