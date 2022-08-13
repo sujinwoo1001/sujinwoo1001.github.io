@@ -73,11 +73,15 @@ ul, ol, li, dd, dt {
 }
 
 .map_button {
-
   width: 55px;
   height: 55px;
-
 }
+
+.share_button {
+  width: 30px;
+  height: 30px;
+}
+
 .parents {
   margin-top: 50px;
   font-size: 17px;
@@ -206,3 +210,4 @@ button {
   border-radius: 5px;
   box-shadow: 1px 1px 3px rgba(0, 0, 0, .3);
 }
+
