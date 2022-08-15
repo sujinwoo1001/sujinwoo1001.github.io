@@ -46,7 +46,38 @@
             <p class="location">
                 2022년 10월 1일 토요일 오후 5시<br>
                 루나미엘레 12층 그랜드볼룸<br>
+
                 <img src="img/map.png" alt="오시는길" class="center">
+
+                <div class="link">
+                    <ul>
+                        <li>
+                            <a href="javascript:void(0);" onclick="location.href='https://apis.openapi.sk.com/tmap/app/routes?appKey=l7xx054f541dd5884645a04ad17cb15e2d70&name=루나미엘레&lon=126.92502059857738&lat=37.529253207411216'">
+                                <!-- <a href="javascript:void(0);" onclick="tmap();"> !-->
+                                <img class="map_button" src="img/buttons/tmap.png"><br>
+                                티맵
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0);" onclick="kakaonavi();">
+                                <img class="map_button" src="img/buttons/kakaonavi.png"><br>
+                                카카오네비
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0);" onclick="navermap();">
+                                <img class="map_button" src="img/buttons/navermap.png"><br>
+                                네이버지도
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0);" onclick="kakaomap();">
+                                <img class="map_button" src="img/buttons/kakaomap.png"><br>
+                                카카오맵
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </p>
         </section>
 
@@ -113,20 +144,58 @@
                 </div>
             </div>
         </section>
+
+
+        <section class="celebration">
+            <h3>축하의 마음을 전하기</h3>
+
+            <div>
+                <button class="act_button" onclick="showPopup()">신랑 계좌번호 확인</button>
+
+                <button class="act_button" onclick="showPopup2()">신부 계좌번호 확인</button>
+            </div>
+
+            <div id="popup_g" class="hide">
+                <div class="content">
+                  <p>
+                    신랑 이진우 <br>
+                    신한은행 <br>
+                    111-1111-1111
+                  </p>
+                  <button onclick="closePopup()">닫기</button>
+                </div>
+            </div>
+            
+            <div id="popup_b" class="hide">
+                <div class="content">
+                  <p>
+                    신부 김수진 <br>
+                    신한은행 <br>
+                    111-1111-1111
+                  </p>
+                  <button onclick="closePopup2()">닫기</button>
+                </div>
+            </div>
+        </section>
     </main>
     <footer id="footer">
         <div class="foot-share link">
             <h3>청첩장 공유하기</h3>
             <ul class="foot-share-list">
                 <li>
-                    <a href="javascript:pcAlert();" class="share_link" onclick="copyToClipboard('https://sujinwoo1001.github.io/invitation.html');" title="청첩장 링크 복사">
+                    <a href="javascript:pcAlert();" class="share_kakao">
+                        <img class="share_button" src="img/buttons/kakao.png"><br>
+                        카카오톡으로<br> 공유하기
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:pcAlert();" class="share_link">
                         <img class="share_button" src="img/buttons/share.png"><br>
-                        링크 복사
+                        링크<br> 공유하기
                     </a>
                 </li>
             </ul>
         </div> 
-        
         <br>
         <br>
         <div class="foot-logo">
@@ -134,14 +203,19 @@
         </div>
     </footer>
 
-    <script>
-        function copyToClipboard(val) {            
-            var t = document.createElement("textarea");
-            document.body.appendChild(t);
-            t.value = val;
-            t.select();
-            document.execCommand('copy');
-            document.body.removeChild(t);
+    <script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
+    <script type='text/javascript'>
+        // 사용할 앱의 JavaScript 키를 설정해 주세요.
+        Kakao.init(fc2a3ac799ba5522f29943ed57dbe72e);
+     
+        // 네비로 표기될 정보를 넣어주세요.
+        function kakaonavi(){
+            Kakao.Navi.start({
+                name: "루나미엘레",
+                x: 126.92502059857738,
+                y: 37.529253207411216,
+                coordType: 'wgs84'
+            });
         }
     </script>
      
