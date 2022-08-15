@@ -1,5 +1,5 @@
 
-<a href="http://sujinwoo1001.github.io/invitation.html">
+<a href="http://sujinwoo1001.github.io/invitation.html" style="text-align: center;">
 청첩장 보러가기
 </a>
 
