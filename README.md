@@ -1,2 +1,8 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+  <main>
+    d
+  </main>
 
-                <img src="img/photo/sujinwoo1.jpg">
+</body>
