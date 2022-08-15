@@ -8,6 +8,16 @@ body{
     
 }
 
+hr {
+  width: 90%;
+  height: 0.5px;
+  border: 0;
+  background: #6a6764;
+  margin-top: 20px;
+  margin-bottom: 40px;
+
+}
+
 img {
     max-width: 100%;
     height: auto;
@@ -22,15 +32,6 @@ section {
 
 }
 
-hr {
-  width: 90%;
-  height: 0.5px;
-  border: 0;
-  background: #6a6764;
-  margin-top: 20px;
-  margin-bottom: 40px;
-
-}
 
 /* section::after{
   margin-top: 40px;
