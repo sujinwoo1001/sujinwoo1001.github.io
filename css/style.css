@@ -12,7 +12,7 @@ body{
 hr {
   width: 90%;
   height: 0.5px;
-  border: 0;
+  border: 0.5px;
   background: #6a6764;
   margin-top: 40px;
   margin-bottom: 40px;
@@ -34,7 +34,7 @@ section {
 }
 
 .small_msg {
-  font-size: x-small;
+  font-size: small;
 
 }
 
