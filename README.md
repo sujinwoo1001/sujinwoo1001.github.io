@@ -1,1 +1,2 @@
-<img src="https://sujinwoo1001.github.io/img/main_original.png"/>
+
+                <img src="img/photo/sujinwoo1.jpg">
