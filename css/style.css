@@ -5,7 +5,8 @@ body{
     font-family: 'IBM Plex Sans KR', sans-serif;
     color: #6a6764;
     text-align: center;
-    
+    font-size: medium;
+  
 }
 
 hr {
@@ -13,7 +14,7 @@ hr {
   height: 0.5px;
   border: 0;
   background: #6a6764;
-  margin-top: 20px;
+  margin-top: 40px;
   margin-bottom: 40px;
 
 }
@@ -32,6 +33,10 @@ section {
 
 }
 
+.small_msg {
+  font-size: x-small;
+
+}
 
 /* section::after{
   margin-top: 40px;
@@ -55,6 +60,15 @@ ul, ol, li, dd, dt {
   padding-inline-start: 0px;
 }
 
+ul.foot-share-list li{
+  margin-left: auto;
+  margin-right: auto;
+  display: table; 
+}
+
+.foot-logo{
+  margin: 50px;
+}
 
 .link li {
     display: inline-block;
