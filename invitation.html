@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/flickity.css">
     <script src="js/scripts.js"></script>
     <script src="js/flickity.pkgd.min.js"></script>
+    <script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
 
 
 </head>
@@ -51,34 +52,35 @@
                 <div class="link">
                     <ul>
                         <li>
-                            <a href="https://surl.tmap.co.kr/78b26716" class="tmap">
+                            <a href="javascript:void(0);" onclick="tmap();">
                                 <img class="map_button" src="img/buttons/tmap.png"><br>
                                 티맵
                             </a>
                         </li>
                         <li>
-                            <a href="javascript:pcAlert();" class="kakaonavi">
+                            <a href="javascript:void(0);" onclick="kakaonavi();">
                                 <img class="map_button" src="img/buttons/kakaonavi.png"><br>
                                 카카오네비
                             </a>
                         </li>
                         <li>
-                            <a href="javascript:pcAlert();" class="navermap">
+                            <a href="javascript:void(0);" onclick="navermap();">
                                 <img class="map_button" src="img/buttons/navermap.png"><br>
                                 네이버지도
                             </a>
                         </li>
                         <li>
-                            <a href="javascript:pcAlert();" class="kakaomap">
+                            <a href="javascript:void(0);" onclick="kakaomap();">
                                 <img class="map_button" src="img/buttons/kakaomap.png"><br>
                                 카카오맵
                             </a>
                         </li>
                     </ul>
                 </div>
-                                
             </p>
         </section>
+
+
 
         <section class="wedding_gallery">
 
@@ -199,6 +201,23 @@
             Sujin & Jinwoo
         </div>
     </footer>
+
+    <script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
+    <script type='text/javascript'>
+        // 사용할 앱의 JavaScript 키를 설정해 주세요.
+        Kakao.init(fc2a3ac799ba5522f29943ed57dbe72e);
+     
+        // 네비로 표기될 정보를 넣어주세요.
+        function kakaonavi(){
+            Kakao.Navi.start({
+                name: "루나미엘레",
+                x: 126.92502059857738,
+                y: 37.529253207411216,
+                coordType: 'wgs84'
+            });
+        }
+    </script>
+     
 </body>
 
 </html>
