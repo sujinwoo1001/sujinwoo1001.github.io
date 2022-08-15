@@ -22,8 +22,17 @@ section {
 
 }
 
+hr {
+  width: 90%;
+  height: 0.5px;
+  border: 0;
+  background: #6a6764;
+  margin-top: 20px;
+  margin-bottom: 40px;
 
-section::after{
+}
+
+/* section::after{
   margin-top: 40px;
   margin-bottom: 40px;
   margin-left: 20px;
@@ -33,8 +42,8 @@ section::after{
 	position:absolute;
 	width: 80%;
 	height:0.5px;
-	background:#6a6764;
-}
+	background:#6a6764; 
+*/
 
 a {
   text-decoration: none;
