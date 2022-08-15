@@ -33,11 +33,14 @@ section {
 
 }
 
-.small_msg {
+.small {
   font-size: small;
 
 }
 
+.x_small {
+  font-size: xx-small;
+}
 /* section::after{
   margin-top: 40px;
   margin-bottom: 40px;
@@ -55,15 +58,22 @@ a {
   text-decoration: none;
 }
 
+a:link {
+  color : #6a6764;
+}
+a:visited {
+  color : #6a6764;
+}
+a:hover {
+  color : #6a6764;
+}
+a:active {
+  color : #6a6764
+}
+
 ul, ol, li, dd, dt {
   list-style: none;
   padding-inline-start: 0px;
-}
-
-ul.foot-share-list li{
-  margin-left: auto;
-  margin-right: auto;
-  display: table; 
 }
 
 .foot-logo{
@@ -117,7 +127,13 @@ ul.foot-share-list li{
   height: 40px;
 }
 
-.share_button {
+li.share_button {
+  width: 100px;
+  height: auto;
+
+}
+
+.share_button_img {
   width: 30px;
   height: 30px;
 }
