@@ -54,20 +54,20 @@ section {
 	background:#6a6764; 
 */
 
-a {
+.link a {
   text-decoration: none;
 }
 
-a:link {
+.link a:link {
   color : #6a6764;
 }
-a:visited {
+.link a:visited {
   color : #6a6764;
 }
-a:hover {
-  color : #6a6764;
+.link a:hover {
+  color : #000000;
 }
-a:active {
+.link a:active {
   color : #6a6764
 }
 
@@ -95,7 +95,6 @@ ul, ol, li, dd, dt {
   font-size: 0.688rem;
   font-weight: 400;
   line-height: 1rem;
-  color: #111;
   text-decoration: none;
 }
 
@@ -129,8 +128,7 @@ ul, ol, li, dd, dt {
 
 li.share_button {
   width: 100px;
-  height: auto;
-
+  height: 100px;
 }
 
 .share_button_img {
