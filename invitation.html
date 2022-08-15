@@ -11,11 +11,19 @@
     <link rel="stylesheet" href="css/flickity.css">
     <script src="js/scripts.js"></script>
     <script src="js/flickity.pkgd.min.js"></script>
+    <script src="https://developers.kakao.com/sdk/js/kakao.min.js"></script>
 
 </head>
 
 <body>
     <main class="contents">
+
+        <a id="kakaotalk-sharing-btn" href="javascript:shareMessage()">
+            <img
+              src="https://developers.kakao.com/assets/img/about/logos/kakaotalksharing/kakaotalk_sharing_btn_medium.png"
+              alt="카카오톡 공유 보내기 버튼"
+            />
+        </a>
         <section class="invitation">
             <br><br><br>
             <img src="img/main.png" alt="수진진우 제일잘나온사진">
@@ -167,7 +175,19 @@
         }
 
     </script>
-     
+    <script type="text/javascript">
+        function shareMessage() {
+          Kakao.Share.sendCustom({
+            templateId: 3135,
+            templateArgs: {
+              title:
+                '판교 맛집에 들르다. 다양하고 풍부한 퓨전 한정식. 깔끔한 내부 인테리어 라이언',
+              description:
+                '부담없는 가격에 푸짐하게 즐기는 점심메뉴 런치한정식, 불고기정식, 돼지 김치찌개 등',
+            },
+          })
+        }
+      </script> 
 </body>
 
 </html>
