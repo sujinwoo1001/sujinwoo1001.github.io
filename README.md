@@ -2,8 +2,7 @@
 <html lang="en">
 <body>
   <main>
-    
-    <img class="button" src="img/buttons/message.png">
+    <img src="https://sujinwoo1001.github.io/img/main_original.png">
   </main>
 
 </body>
