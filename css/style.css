@@ -72,6 +72,19 @@ a {
   color : #6a6764
 }
 
+.x_small a:link {
+  color : #6a6764;
+}
+.x_small a:visited {
+  color : #6a6764;
+}
+.x_small a:hover {
+  color : #000000;
+}
+.x_small a:active {
+  color : #6a6764
+}
+
 ul, ol, li, dd, dt {
   list-style: none;
   padding-inline-start: 0px;
