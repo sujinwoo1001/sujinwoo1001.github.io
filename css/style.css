@@ -159,6 +159,10 @@ li.share_button {
 
 }
 
+.afterparty_invitation{
+  font-size: medium;
+}
+
 .parents_contacts li{
   height: auto;
   vertical-align: top;
