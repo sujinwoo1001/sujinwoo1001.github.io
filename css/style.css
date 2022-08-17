@@ -141,17 +141,18 @@ ul, ol, li, dd, dt {
 }
 
 li.share_button {
-  width: 100px;
-  height: 100px;
+  width: 130px;
+  height: auto;
 }
 
 .share_button_img {
   width: 30px;
   height: 30px;
+  margin-bottom: 10px;
 }
 
 .share_button a{
-  font-size: medium;
+  font-size: x-small;
 }
 
 .contacts li{
