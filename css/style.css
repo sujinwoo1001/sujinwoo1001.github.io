@@ -5,7 +5,6 @@ body{
     color: #6a6764;
     text-align: center;
     font-size: large;  
-    line-height: 160%;
 }
 
 hr {
@@ -116,8 +115,9 @@ ul, ol, li, dd, dt {
 }
 
 .invitation_msg {
+
 	position:relative;
-  line-height: 210%;
+  line-height: 190%;
 
 }
 
