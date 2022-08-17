@@ -1,8 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@300&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@300&display=swap');
 
 body{
-    font-family: 'IBM Plex Sans KR', sans-serif;
+    font-family: 'Noto Serif KR', serif;
     color: #6a6764;
     text-align: center;
     font-size: medium;
@@ -150,9 +149,33 @@ li.share_button {
   height: 30px;
 }
 
+.contacts li{
+  display: inline-block;
+
+}
+
+.parents_contacts li{
+  width: 120px;
+  height: auto;
+  vertical-align: top;
+}
+
+.parents_name{
+  font-weight: bold;
+}
+
+.flower {
+  width: 14px;
+  height: 14px;
+
+}
 .parents {
   margin-top: 50px;
   font-size: 17px;
+}
+
+.parents_contacts a{
+  margin-bottom: 30px;
 }
 
 .img_face {
@@ -167,6 +190,8 @@ li.share_button {
   display: flex;
 
 }
+
+
 .bridal {
   flex: 1;
   text-align: right;
