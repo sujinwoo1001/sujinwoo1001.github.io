@@ -175,6 +175,20 @@ li.share_button {
   height: 14px;
 
 }
+
+.bridal {
+  flex: 1;
+  text-align: right;
+  margin-right: 30px;
+
+}
+
+.groom {
+  flex: 1;
+  text-align: left;
+  margin-left: 30px;
+}
+
 .parents {
   margin-top: 50px;
   font-size: 17px;
@@ -184,6 +198,25 @@ li.share_button {
   margin-bottom: 30px;
 }
 
+.bridal h4{
+  margin-right: 5px;
+}
+
+.groom h4{
+  margin-left: 5px;
+}
+
+.bridal .contacts_button{
+  margin-right: 10px;
+}
+
+.bridal .contacts_button{
+  margin-right: 10px;
+}
+
+.groom .contacts_button{
+  margin-left: 10px;
+}
 .img_face {
   width: 60px;
   height: 60px;
@@ -198,18 +231,6 @@ li.share_button {
 }
 
 
-.bridal {
-  flex: 1;
-  text-align: right;
-  margin-right: 30px;
-
-}
-
-.groom {
-  flex: 1;
-  text-align: left;
-  margin-left: 30px;
-}
 
 /* external css: flickity.css */
 
