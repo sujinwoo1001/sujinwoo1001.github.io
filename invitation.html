@@ -225,15 +225,14 @@
 
     <script>
         function copyToClipboard(val) {            
+            alert('모바일 청첩장 링크가 복사되었습니다.')
             var t = document.createElement("textarea");
             document.body.appendChild(t);
             t.value = val;
             t.select();
             document.execCommand('copy');
             document.body.removeChild(t);
-
-            document.getElementById('copy_complete').innerHTML='링크 복사 완료 👍🏾'
-
+        
         }
 
         Kakao.init('b4752728f3a44d9bdd204d4260f7e721')
