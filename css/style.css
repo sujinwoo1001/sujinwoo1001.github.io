@@ -29,8 +29,13 @@ section {
   margin-left: auto;
   margin-right: auto;
   width: 100%;
-
 }
+
+.invitation_img {
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
 
 .invitation .parents{
   font-size: 105%;
