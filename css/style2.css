@@ -1,0 +1,388 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@300&display=swap');
+
+body{
+  font-family: 'Noto Serif KR', serif;
+  color: #6a6764;
+  text-align: center;
+  font-size: large;  
+
+  display: flex;
+  justify-content: center;
+}
+
+hr {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  width: 90%; 
+  height: 0.5px; 
+  border: none; 
+  border-bottom: 0px dotted #6a6764; 
+  border-top: 1px dotted #6a6764;
+
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+  }
+
+section {
+  margin-bottom: 2cm;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+.invitation_img {
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+
+.invitation .parents{
+  font-size: 105%;
+}
+
+.small {
+  font-size: small;
+
+}
+
+.x_small {
+  font-size: xx-small;
+}
+/* section::after{
+  margin-top: 40px;
+  margin-bottom: 40px;
+  margin-left: 20px;
+  margin-right: 20px;
+	content:'';
+	display:block;
+	position:absolute;
+	width: 80%;
+	height:0.5px;
+	background:#6a6764; 
+*/
+
+a {
+  text-decoration: none;
+}
+
+.link a:link {
+  color : #6a6764;
+}
+.link a:visited {
+  color : #6a6764;
+}
+.link a:hover {
+  color : #000000;
+}
+.link a:active {
+  color : #6a6764
+}
+
+.x_small a:link {
+  color : #6a6764;
+}
+.x_small a:visited {
+  color : #6a6764;
+}
+.x_small a:hover {
+  color : #000000;
+}
+.x_small a:active {
+  color : #6a6764
+}
+
+ul, ol, li, dd, dt {
+  list-style: none;
+  padding-inline-start: 0px;
+}
+
+.foot-logo{
+  margin: 50px;
+}
+
+.link li {
+    display: inline-block;
+    vertical-align: top;
+    width: auto;
+    padding: 0 0.625rem;
+    box-sizing: content-box;
+}
+
+
+.link a {
+  position: relative;
+  display: block;
+  text-decoration: none;
+}
+
+.invitation_msg {
+
+	position:relative;
+  line-height: 190%;
+
+}
+
+.invitation_msg::after{
+	content:'';
+	display:block;
+	position:absolute;
+	left:50%; 
+	width:1px;
+	height:1.875rem;
+	background:#6a6764;
+  margin-top: 20px;
+}
+
+.button {
+  width: 25px;
+  height: 25px;
+  margin: 5px;
+}
+
+.map_button {
+  width: 40px;
+  height: 40px;
+}
+
+li.share_button {
+  width: 130px;
+  height: auto;
+}
+
+.share_button_img {
+  width: 30px;
+  height: 30px;
+  margin-bottom: 10px;
+}
+
+.share_button a{
+  font-size: x-small;
+}
+
+.contacts li{
+  display: inline-block;
+
+}
+
+.afterparty_invitation{
+  font-size: medium;
+}
+
+.parents_contacts li{
+  height: auto;
+  vertical-align: top;
+  font-size: medium;
+}
+
+.parents_name{
+  font-weight: bold;
+}
+
+.flower {
+  width: 14px;
+  height: 14px;
+
+}
+
+.bridal {
+  flex: 1;
+  text-align: right;
+  margin-right: 30px;
+
+}
+
+.groom {
+  flex: 1;
+  text-align: left;
+  margin-left: 30px;
+}
+
+.parents {
+  margin-top: 50px;
+  font-size: 17px;
+}
+
+.parents_contacts a{
+  margin-bottom: 30px;
+}
+
+.bridal h4{
+  margin-right: 5px;
+}
+
+.groom h4{
+  margin-left: 5px;
+}
+
+.bridal .contacts_button{
+  margin-right: 10px;
+}
+
+.bridal .contacts_button{
+  margin-right: 10px;
+}
+
+.groom .contacts_button{
+  margin-left: 10px;
+}
+.img_face {
+  width: 60px;
+  height: 60px;
+  margin: 5px;
+}
+
+.contacts_div {
+  width: 100%;
+  margin: 10px auto;
+  display: flex;
+
+}
+
+.gallery {
+  display: grid;
+  width: 95%;
+  
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 10px;
+}
+
+
+.grid div {
+  width: 100%;
+  height: 0%;
+  padding-bottom: 100%;
+  background: white;
+}
+
+.grid div:last-child:nth-child(3n - 1) {
+  grid-column: span 2;
+  height: auto;
+  padding-bottom: 0;
+}
+
+@media (max-width: 400px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* external css: flickity.css */
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+
+
+.gallery-cell {
+  width: 66%;
+  height: 200px;
+  margin-right: 10px;
+  background: #8C8;
+  counter-increment: gallery-cell;
+}
+
+/* cell number */
+.gallery-cell:before {
+  display: block;
+  text-align: center;
+  content: counter(gallery-cell);
+  line-height: 200px;
+  font-size: 80px;
+  color: white;
+} 
+
+
+
+/* */
+button {
+  height: 2.5em;
+  cursor: pointer;
+}
+
+#popup_g {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, .7);
+  z-index: 1;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+}
+
+#popup_g.hide {
+  display: none;
+}
+
+#popup_g.multiple-filter {
+  backdrop-filter: blur(4px) grayscale(90%);
+  -webkit-backdrop-filter: blur(4px) grayscale(90%);
+}
+
+#popup_g .content {
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, .3);
+}
+
+
+
+#popup_b {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, .7);
+  z-index: 1;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+}
+
+#popup_b.hide {
+  display: none;
+}
+
+#popup_b.multiple-filter {
+  backdrop-filter: blur(4px) grayscale(90%);
+  -webkit-backdrop-filter: blur(4px) grayscale(90%);
+}
+
+#popup_b .content {
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, .3);
+}
+
+.act_button{
+  border: 1px solid rgb(114, 114, 114);
+  background-color: rgba(0,0,0,0);
+  color: rgb(114, 114, 114);
+  padding: 5px;
+
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;    
+}
+
+.act_button:hover{
+  color:white;
+  background-color: rgb(141, 141, 141);
+}
