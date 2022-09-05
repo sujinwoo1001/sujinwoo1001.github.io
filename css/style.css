@@ -243,11 +243,8 @@ li.share_button {
   font-size: medium;
 }
 
-.bus_msg {
-  margin-top: 10px;
-  margin-left: 20%;
-  text-align: left;
-  font-size: medium;
+.bus_msg_small {
+  font-size: small;
 }
 
 .call_groom {
@@ -272,7 +269,6 @@ li.share_button {
   background: #ebebeb;
   color: #6a6764;
   margin: 10px auto 0;
-  text-indent: -14px;
   font-size: 14px;
 }
 
