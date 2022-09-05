@@ -67,7 +67,7 @@
                 </span>
                 <br> <br>
                 <span class="bus_msg_small">
-                    대절버스 이용을 원하시는 분은 신랑측에 말씀해주세요. 
+                    대절버스 이용을 원하시는 분은 <br> 신랑측에 말씀해주세요. 
                 </span>
             </div>
         </section>
@@ -309,26 +309,30 @@
         function copy_groom() {
             var copyText = document.getElementById('groom_account');
             var textArea = document.createElement('textarea');
+
+            alert("🤵🏻‍♂️ 신랑의 계좌번호가 복사되었습니다.");
+
             textArea.value = copyText.textContent;
             document.body.appendChild(textArea);
             textArea.select();
             document.execCommand('copy');
             textArea.remove();
 
-            alert("🤵🏻‍♂️ 신랑의 계좌번호가 복사되었습니다.");
         }
 
 
         function copy_bridal() {
             var copyText = document.getElementById('bridal_account');
             var textArea = document.createElement('textarea');
+
+            alert("👰🏻‍♀️ 신부의 계좌번호가 복사되었습니다.");
+
             textArea.value = copyText.textContent;
             document.body.appendChild(textArea);
             textArea.select();
             document.execCommand('copy');
             textArea.remove();
 
-            alert("👰🏻‍♀️ 신부의 계좌번호가 복사되었습니다.");
         }
         
         Kakao.init('b4752728f3a44d9bdd204d4260f7e721')
