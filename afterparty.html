@@ -5,9 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>👰🏻‍♀️🤵🏻‍♂️ 수진과 진우의 결혼식에 초대합니다</title>
-    <meta name="description" content="2022년 10월 1일 오후 5시">
+    <title>🎉 Jinwoo & Sujin's Wedding After Party 💜</title>
+    <meta name="description" content="2022년 10월 1일 오후 7시 신사펍 (이수역)">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/afterparty_style.css">
+    <script src="js/kakao.js"></script>
 
 </head>
 
@@ -18,35 +20,18 @@
         <section class="invitation panel" data-color="indigo">
             <img class="invitation_img" src="img/afterparty_main.png" alt="수진진우 애프터파티">
             
-            <br>
-            <br>
-        <!--
-            <h3>
-                🤵🏻‍♀️💜👰🏻<br> 수진과 진우의 <br>🎉결혼식 애프터파티 🥳
-            </h3>
-            ⌚️ 시간: 결혼식 당일 오후 7시 반부터 <br>
-            📌 장소: 이수역 근처 <br>
-
-            <br>
-            신부가 <br>
-            애프터파티 초대장을 <br>
-            열심히 준비하고 있습니다. <br>
-            조금만 기다려 주세요. <br><br>
-            <img src="img/afterparty_main.jpg" alt="미안하다 이진우">
-
-        -->
         </section>
         
         <section class="panel" data-color="violet">
-            <h2>Violet panel</h2>
+            <h2>초대의 말</h2>
         </section>
 
         <section class="panel" data-color="blue">
-            <h2>Blue panel</h2>
+            <h2>일시 및 장소</h2>
         </section>
 
         <section class="panel" data-color="yellow">
-            <h2>Yellow panel</h2>
+            <h2>오시는 길</h2>
         </section>
         
         <section class="panel" data-color="orange">
@@ -58,9 +43,61 @@
 
     </main>
 
+    <footer id="footer">
+        <div class="foot-share link">
+            <h6>애프터파티 초대장 공유하기</h6>
+            <ul class="foot-share-list">
+                <li class="share_button">
+                    <a id="create-kakaotalk-sharing-btn" href="javascript:;" class="share_kakao">
+                        <img class="share_button_img" src="img/buttons/kakao.png" alt="카카오톡 공유 보내기 버튼"><br>
+                        카카오톡으로 공유하기
+                    </a>
+                </li>
+                <li class="share_button">
+                    <a href="" class="share_link" onclick="copyToClipboard('https://sujinwoo1001.github.io/invitation.html');" title="청첩장 링크 복사">
+                        <img class="share_button_img" src="img/buttons/share.png"><br>
+                        링크 복사하기
+                    </a>
+                </li>
+            </ul>
+        </div> 
+        <br>
+    </footer>
+
+
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> 
     <script src="/js/bg_color.js"></script>
+    <script>
+
+    Kakao.init('b4752728f3a44d9bdd204d4260f7e721')
+        Kakao.Share.createDefaultButton({
+            container: '#create-kakaotalk-sharing-btn',
+            objectType: 'location',
+            address: '서울 동작구 동작대로 129',
+            addressTitle: '신사펍',
+            content: {
+                title: '수진과 진우의 결혼식 애프터파티에 초대합니다',
+                description: '2022년 10월 1일 오후 7시',
+                imageUrl:
+                    'http://sujinwoo1001.github.io/img/afterparty_main.png',
+                link: {
+                    mobileWebUrl: 'https://sujinwoo1001.github.io/afterparty_invitation.html',
+                    webUrl: 'https://sujinwoo1001.github.io/afterparty_invitation.html',
+                },
+            },
+            buttons: [
+                {
+                    title: '웹으로 보기',
+                    link: {
+                    mobileWebUrl: 'https://sujinwoo1001.github.io/afterparty_invitation.html',
+                    webUrl: 'https://sujinwoo1001.github.io/afterparty_invitation.html',
+                    },
+                },
+            ],
+        })
+
+    </script>
 </body>
 
 </html>
