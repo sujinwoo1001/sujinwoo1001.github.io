@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>👰🏻‍♀️🤵🏻‍♂️ Sujin & Allen's Wedding</title>
+    <title>👰🏻‍♀️🤵🏻‍♂️ Sujin & Jinwoo's Wedding</title>
     <meta name="description" content="2022년 10월 1일 오후 5시">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/flickity.css">
@@ -38,11 +38,14 @@
 
             <br><br>
             <h3>Date </h3>
-            <p class="location">
+            <p class="date">
                 10/01/2022 <br> 5PM<br>
             </p>
             <br><br>
             <h3>Location</h3>
+            <p class="location">
+                Yeouido LUNA MIELE <br>
+                12th Floor Grandballroom <br> <br>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3164.09884772096!2d126.9248614!3d37.529167099999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357c9f3a60b2f5e1%3A0x406740833b656b46!2z66Oo64KY66-47JeY66CI!5e0!3m2!1sko!2skr!4v1663124343753!5m2!1sko!2skr" 
             class="myFrame" width="450" height="480" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </section>
@@ -136,7 +139,7 @@
                 Your participation and congratulation <br>
                 would be highly appreciated. <br> <br>
                 From <br>
-                🤵🏻‍♂️ Allen & Sujin 👰🏻‍♀️
+                🤵🏻‍♂️ Jinwoo & Sujin 👰🏻‍♀️
             </div>
         </section>
 
@@ -147,26 +150,31 @@
             <h6>Share this Invitation</h6>
             <ul class="foot-share-list">
                 <li class="share_button">
-                    <a id="create-kakaotalk-sharing-btn" href="javascript:;" class="share_kakao">
-                        <img class="share_button_img" src="img/buttons/kakao.png" alt="카카오톡 공유 보내기 버튼"><br>
-                        Share Kakao
-                    </a>
-                </li>
-                <li class="share_button">
-                    <a href="" class="share_link" onclick="copyToClipboard('https://sujinwoo1001.github.io/invitation.html');" title="청첩장 링크 복사">
+                    <a href="" class="share_link" onclick="copyToClipboard('https://sujinwoo1001.github.io/invitation_en.html');" title="청첩장 링크 복사">
                         <img class="share_button_img" src="img/buttons/share.png"><br>
                         Copy Link
                     </a>
                 </li>
             </ul>
         </div> 
+
+        <hr>
+
+        <section>
+            <br>
+            <div>
+                <a href="https://sujinwoo1001.github.io/invitation.html" class="share_link bus_msg_small" >
+                    Korean Invitation
+                </a>
+            </div>
+        </section>
         <br>
     </footer>
 
 
     <script>
         function copyToClipboard(val) {            
-            alert('모바일 청첩장 링크가 복사되었습니다.')
+            alert('The link of this invitation is copied. 🙆🏻‍♀️')
             var t = document.createElement("textarea");
             document.body.appendChild(t);
             t.value = val;
@@ -177,32 +185,6 @@
         }
 
         
-        Kakao.init('b4752728f3a44d9bdd204d4260f7e721')
-        Kakao.Share.createDefaultButton({
-            container: '#create-kakaotalk-sharing-btn',
-            objectType: 'location',
-            address: '서울 영등포구 여의공원로 101',
-            addressTitle: '루나미엘레',
-            content: {
-                title: '수진과 진우의 결혼식에 초대합니다',
-                description: '2022년 10월 1일 오후 5시',
-                imageUrl:
-                    'http://sujinwoo1001.github.io/img/main.jpeg',
-                link: {
-                    mobileWebUrl: 'https://sujinwoo1001.github.io/invitation.html',
-                    webUrl: 'https://sujinwoo1001.github.io/invitation.html',
-                },
-            },
-            buttons: [
-                {
-                    title: '웹으로 보기',
-                    link: {
-                    mobileWebUrl: 'https://sujinwoo1001.github.io/invitation.html',
-                    webUrl: 'https://sujinwoo1001.github.io/invitation.html',
-                    },
-                },
-            ],
-        })
         
         var target = document.querySelectorAll('.account_btn');
         var btnPopClose = document.querySelectorAll('.pop_wrap .btn_close');
