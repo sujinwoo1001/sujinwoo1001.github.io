@@ -1,10 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&family=Noto+Serif+KR:wght@300&display=swap');
+
 body {
+    font-family: 'Noto Sans KR', sans-serif;
     color: #fff;
     background-color: #4332CF;
     transition: background-color 1s ease;
     text-align: center;
+    font-size: large;
 }
 
+a {
+  text-decoration: none;
+}
+
+ul, ol, li, dd, dt {
+  list-style: none;
+  padding-inline-start: 0px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+hr {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  width: 90%; 
+  height: 0.5px; 
+  border: none; 
+
+}
 
 .link a:link {
     color : #fff;
@@ -19,16 +46,27 @@ body {
     color : #fff
 }
 
+
+.link li {
+  display: inline-block;
+  vertical-align: top;
+  width: auto;
+  padding: 0 0.625rem;
+  box-sizing: content-box;
+}
+
+
+.link a {
+position: relative;
+display: block;
+text-decoration: none;
+}
+
+
 /* panel styles */
 .panel {
-    /* min height incase content is higher than window height */
-    /* min-height: 50vh; */
-    display: flex;
     justify-content: space-around;
     align-items: center;
-    font-family: sans-serif;
-    /* outline: 10px solid hotpink; */
-    /* turn above on to see the edge of panels */
 }
 
 /* colours */
@@ -53,4 +91,97 @@ body {
 .color-red {
   background-color: #F2293A;
 }
+.color-pink {
+  background-color: #ff319c;
+}
 
+
+li.share_button {
+  width: 130px;
+  height: auto;
+}
+
+.share_button_img {
+  width: 30px;
+  height: 30px;
+  margin-bottom: 10px;
+}
+
+.share_button a{
+  font-size: x-small;
+}
+
+table {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+
+td {
+  margin-left: 20px;
+}
+
+
+
+.contacts_div {
+  width: 100%;
+  margin: 10px auto;
+  display: flex;
+
+}
+
+
+.bridal {
+  flex: 1;
+  text-align: right;
+  margin-right: 30px;
+
+}
+
+.groom {
+  flex: 1;
+  text-align: left;
+  margin-left: 30px;
+}
+
+
+.bridal h4{
+  margin-right: 5px;
+}
+
+.groom h4{
+  margin-left: 5px;
+}
+
+.button {
+  width: 25px;
+  height: 25px;
+  margin: 5px;
+}
+
+
+.bridal .contacts_button{
+  margin-right: 10px;
+}
+
+.bridal .contacts_button{
+  margin-right: 10px;
+}
+
+.groom .contacts_button{
+  margin-left: 10px;
+}
+.img_face {
+  width: 60px;
+  height: 60px;
+  margin: 5px;
+}
+
+.contacts_div {
+  width: 100%;
+  margin: 10px auto;
+  display: flex;
+
+}

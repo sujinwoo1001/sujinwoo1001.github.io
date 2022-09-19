@@ -7,7 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>🎉 Jinwoo & Sujin's Wedding After Party 💜</title>
     <meta name="description" content="2022년 10월 1일 오후 7시 신사펍 (이수역)">
-    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/afterparty_style.css">
     <script src="js/kakao.js"></script>
 
@@ -21,40 +20,115 @@
             <img class="invitation_img" src="img/afterparty_main.png" alt="수진진우 애프터파티">
             
         </section>
-        
-        <section class="panel" data-color="violet">
-            <h2>초대의 말</h2>
-        </section>
 
+        <hr>
+        
+        
         <section class="panel" data-color="blue">
-            <h2>일시 및 장소</h2>
+            <h2>초대의 말 </h2>
+            <p>
+                결혼식이 식상하다구요? <br>
+                이대로는 너무 아쉽다구요? <br>
+                신랑 신부를 조금 더 축하해주고 싶다구요? <br>
+                <br>
+                그래서 준비했습니다. <br>
+                먹고 마시고 즐기자! <br>
+                <br>
+                <p class="txt_small">
+                    (해설 : 결혼식에서 미처 나누지 못한  <br>
+                    감사한 마음을 전하기 위해  <br>
+                    조금 더 즐겁고 편안한 자리를 마련했습니다. <br>
+                    함께 자리하셔서 즐거운 시간을 보내주세요. )<br>
+                </p>
+            </p>
         </section>
 
-        <section class="panel" data-color="yellow">
-            <h2>오시는 길</h2>
+        <hr>
+
+        <section class="panel" data-color="violet">
+            <h2>장소</h2>
+            <p>
+                신사펍 <br> <br>
+                서울 동작구 동작대로 129 4층<br>
+                이수역 (총신대입구역) 14번 출구
+            </p>
+
         </section>
+
+
+        <hr>
         
-        <section class="panel" data-color="orange">
-            <h2>Orange panel</h2>
+        <section class="panel" data-color="pink">
+            <h2>타임테이블</h2>
+
+            <p>
+                <table>
+                    <tr>
+                        <td class="time">19:00 - 20:00</td>
+                        <td class="title">Warm-up</td>
+                    </tr>
+                    <tr>
+                        <td class="time">20:00 - 20:10</td>
+                        <td class="title">인사</td>
+                    </tr>
+                    <tr>
+                        <td class="time">20:10 - 20:15</td>
+                        <td class="title">축가</td>
+                    </tr>
+                    <tr>
+                        <td class="time">20:15 - 20:40</td>
+                        <td class="title">선물 추첨</td>
+                    </tr>
+                    <tr>
+                        <td class="time">20:40 - 25:00</td>
+                        <td class="title">Let's Party!</td>
+                    </tr>
+                </table>
+            </p>
         </section>
-        <section class="panel" data-color="red">
-            <h2>Red panel</h2>
+
+        <hr>
+        
+        <section class="panel contacts" data-color="pink">
+
+            <h3>신부신랑에게 연락하기</h3>
+            <br>
+            <div class="contacts_div">
+                <div class="bridal">
+                    <img class="img_face" src="img/sujin_a.png"> <br>
+                    <div>
+                    <a href="tel:010-9296-8617">
+                        <img class="button" src="img/buttons/phone.png">
+                    </a>
+                    <a href="sms:010-9296-8617">
+                        <img class="button" src="img/buttons/message.png">
+                    </a>
+                    </div>
+                </div>
+                <div class="groom">
+                    <img class="img_face" src="img/jinwoo_a.png"> <br>
+                    <div>
+                    <a href="tel:010-2081-8380">
+                        <img class="button" src="img/buttons/phone.png">
+                    </a>
+                    <a href="sms:010-2081-8380">
+                        <img class="button" src="img/buttons/message.png">
+                    </a>
+                    </div>
+                </div>
+            </div>
+
         </section>
 
     </main>
 
+    <hr>
     <footer id="footer">
         <div class="foot-share link">
             <h6>애프터파티 초대장 공유하기</h6>
             <ul class="foot-share-list">
                 <li class="share_button">
-                    <a id="create-kakaotalk-sharing-btn" href="javascript:;" class="share_kakao">
-                        <img class="share_button_img" src="img/buttons/kakao.png" alt="카카오톡 공유 보내기 버튼"><br>
-                        카카오톡으로 공유하기
-                    </a>
-                </li>
-                <li class="share_button">
-                    <a href="" class="share_link" onclick="copyToClipboard('https://sujinwoo1001.github.io/invitation.html');" title="청첩장 링크 복사">
+                    <a href="" class="share_link" onclick="copyToClipboard('https://sujinwoo1001.github.io/afterparty.html');" title="청첩장 링크 복사">
                         <img class="share_button_img" src="img/buttons/share.png"><br>
                         링크 복사하기
                     </a>
@@ -70,33 +144,16 @@
     <script src="/js/bg_color.js"></script>
     <script>
 
-    Kakao.init('b4752728f3a44d9bdd204d4260f7e721')
-        Kakao.Share.createDefaultButton({
-            container: '#create-kakaotalk-sharing-btn',
-            objectType: 'location',
-            address: '서울 동작구 동작대로 129',
-            addressTitle: '신사펍',
-            content: {
-                title: '수진과 진우의 결혼식 애프터파티에 초대합니다',
-                description: '2022년 10월 1일 오후 7시',
-                imageUrl:
-                    'http://sujinwoo1001.github.io/img/afterparty_main.png',
-                link: {
-                    mobileWebUrl: 'https://sujinwoo1001.github.io/afterparty_invitation.html',
-                    webUrl: 'https://sujinwoo1001.github.io/afterparty_invitation.html',
-                },
-            },
-            buttons: [
-                {
-                    title: '웹으로 보기',
-                    link: {
-                    mobileWebUrl: 'https://sujinwoo1001.github.io/afterparty_invitation.html',
-                    webUrl: 'https://sujinwoo1001.github.io/afterparty_invitation.html',
-                    },
-                },
-            ],
-        })
-
+        function copyToClipboard(val) {            
+            alert('애프터파티 초대장 링크가 복사되었습니다.')
+            var t = document.createElement("textarea");
+            document.body.appendChild(t);
+            t.value = val;
+            t.select();
+            document.execCommand('copy');
+            document.body.removeChild(t);
+        
+        }
     </script>
 </body>
 
