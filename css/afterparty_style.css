@@ -33,19 +33,39 @@ hr {
 
 }
 
-.link a:link {
+a:link {
     color : #fff;
 }
-.link a:visited {
+a:visited {
     color : #fff;
 }
-.link a:hover {
+a:hover {
     color : #6a6764;
 }
-.link a:active {
+a:active {
     color : #fff
 }
 
+.gift {
+  margin-top: 50px;
+}
+
+
+.time {
+  text-align: right;
+  padding-right: 20px;
+
+}
+
+.title {
+  text-align: left;
+  padding-left: 20px;
+
+}
+
+.gift a {
+  text-decoration: underline;
+}
 
 .link li {
   display: inline-block;
